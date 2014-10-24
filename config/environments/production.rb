@@ -4,9 +4,6 @@ Me::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
 
-  config.assets.compile = ['*.js', '*.css']
-
-  config.active_support.deprecation = :silence
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
@@ -19,7 +16,7 @@ Me::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
