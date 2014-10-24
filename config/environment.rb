@@ -3,4 +3,4 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
 Me::Application.initialize!
-Me::ActiveSupport::Deprecation.silenced = true
+::ActiveSupport::Deprecation.silenced = true
